@@ -9,14 +9,14 @@ import (
 )
 
 type Usuarios struct {
-	id            int    `json:"id"`
-	nombre        string `json:"nombre"`
-	apellido      string `json:"apellido"`
-	email         string `json:"email"`
-	edad          int    `json:"edad"`
-	altura        int    `json:"altura"`
-	activo        bool   `json:"activo"`
-	fechaCreacion string `json:"fechaCreacion"`
+	Id            int    `json:"id"`
+	Nombre        string `json:"nombre"`
+	Apellido      string `json:"apellido"`
+	Email         string `json:"email"`
+	Edad          int    `json:"edad"`
+	Altura        int    `json:"altura"`
+	Activo        bool   `json:"activo"`
+	FechaCreacion string `json:"fechaCreacion"`
 }
 
 func main() {
@@ -26,12 +26,11 @@ func main() {
 	router := gin.Default()
 
 	// captura la solicitud get "/hola"
-	router.GET("/saludar : nombre", func(c *gin.Context) {
+	router.GET("/saludar", func(c *gin.Context) {
 
-		nombre := c.Param("nombre")
 		c.JSON(200, gin.H{
 
-			"message": "hola " + nombre,
+			"message": "hola Alexander",
 		})
 
 	})

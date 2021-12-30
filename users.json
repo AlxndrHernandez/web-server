@@ -1,4 +1,4 @@
-[
+
     {
         "id" : 1234,
         "nombre" : "Alexander",
@@ -8,15 +8,4 @@
         "altura" : 176,
         "activo" : true,
         "fechaCreacion" : "27-03-1991"
-    },
-    {
-        "id" : 2345,
-        "nombre" : "Francisco",
-        "apellido" : "Sandoval",
-        "email" : "Francisco.sandoval@mercadolibre.cl",
-        "edad" : 22,
-        "altura" : 176,
-        "activo" : true,
-        "fechaCreacion" : "27-03-1991"
     }
-]
